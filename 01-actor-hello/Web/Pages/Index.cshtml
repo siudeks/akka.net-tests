@@ -1,0 +1,14 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>
+        @Html.Raw(Model.Value)
+        Ask an Akka Actor about current time
+        @Html.ActionLink("Ask an Actor about time", "Index", "MyIndex")
+    </p>
+</div>
